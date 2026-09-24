@@ -1,0 +1,42 @@
+{
+  "robodk_version": "6.0.6.26902",
+  "license": "Free (Trial)",
+  "program": "POLIR",
+  "instructions": 37,
+  "passes": 5,
+  "points_per_pass": 5,
+  "pad_diameter_mm": 80,
+  "feed_mm_s": 40,
+  "overlap_percent": 50,
+  "validation": {
+    "valid_instructions": 37.0,
+    "estimated_seconds": 11.954728489502173,
+    "distance_mm": 2100.096038411223,
+    "valid_ratio": 1.0,
+    "message": "No problems found for this path<br>No collisions detected.",
+    "timing_note": "The API time estimate differs from the observed simulator run. Do not use it as a verified process cycle time."
+  },
+  "collision_sampling": {
+    "mm_step": 5,
+    "deg_step": 3,
+    "excluded_pairs": [
+      "polishing pad/tool and workpiece (intended contact)",
+      "robot flange (link 6) and attached tool (mounting contact)"
+    ]
+  },
+  "scope": "Geometric and kinematic simulation; finish, contact force and production safety are not validated.",
+  "simulation_run": {
+    "completed": true,
+    "speed_multiplier": 1,
+    "observed_wall_seconds": 54.2,
+    "collisions_at_end": 0
+  },
+  "fanuc_export": {
+    "file": "export/POLIR.LS",
+    "mn_lines": 38,
+    "has_end_marker": true,
+    "api_makeprogram_status": false,
+    "api_makeprogram_log": "",
+    "note": "The complete LS text file was written. The API did not report successful completion; no TP compilation or controller validation is claimed."
+  }
+}
